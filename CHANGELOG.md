@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2
+
+  - Allow ar_after_transaction 1.x, which supports Active Record 8.1. The 1.x line only moves the ActiveRecord::Base extension into an `ActiveSupport.on_load(:active_record)` hook; the transaction callback code is unchanged.
+
 ## 1.2.0
 
   - When async is false we want to fall back to the original logic (#11 thanks @erf530)
